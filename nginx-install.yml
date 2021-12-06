@@ -1,0 +1,14 @@
+---
+- name: Instalar Servidor Web
+  hosts: servers
+  become: yes
+  tasks:
+  - name: Instalar Nginx
+    apt:
+      name: nginx
+      state: present
+  - name: Habilitar Nginx
+    service:
+      name: nginx
+      enabled: yes
+      state: started
