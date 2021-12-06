@@ -13,6 +13,7 @@
       apt:
         name: ['docker-ce', 'docker-ce-cli', 'containerd.io']
         state: absent
+        purge: 'yes'
     - name: Remover Repositorio
       apt_repository:
         repo: 'deb https://download.docker.com/linux/debian bullseye stable'

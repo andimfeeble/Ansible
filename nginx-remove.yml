@@ -13,3 +13,4 @@
     apt:
       name: ['nginx', 'nginx-common']
       state: absent
+      purge: 'yes'
