@@ -11,6 +11,8 @@
     ignore_errors: 'yes'
   - name: Remover Nginx
     apt:
-      name: ['nginx', 'nginx-common']
+      name:
+        - nginx
+        - nginx-common
       state: absent
       purge: 'yes'
